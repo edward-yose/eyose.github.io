@@ -1,0 +1,614 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: #f0f0f0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.body-context h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    font-weight: 600;
+    font-size: 72px;
+    padding: 12rem 8rem 0rem 8rem;
+    color: #00ADB5;
+}
+
+.name-title {
+    font-size: 72px;
+    text-transform: uppercase;
+    margin: -12px 0px;
+    font-weight: 700;
+}
+
+.left-home-content{
+    margin: auto;
+    height: 50%;
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.left-home-content p{
+    color: #00ADB5;
+}
+
+.right-home-content{
+    margin: 2rem;
+    height: 50%;
+    width: 50%;
+    position: relative;
+}
+
+#btn-cv-download{
+    padding: 2.5% 0rem;
+}
+
+#short-desc{
+    font-size: 24px;
+    color: #f0f0f0;
+    font-weight: 400;
+    margin: 2px 0px;
+}
+
+#first-name{
+    color:#f0f0f0;
+}
+
+
+#sect-about h1,
+#sect-experiences h1{
+    padding: 0px 128px;
+}
+
+.sect-about-container p{
+    font-size: 20px;
+    color: #f0f0f0;
+}
+.sect-about-container img{
+    display: block;
+    max-width: 480px;
+    max-height: 320px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+#sect-about-1, 
+#sect-about-2,
+#sect-about-3,
+#sect-about-4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+#sect-about-1, #sect-about-3{
+    background-color: #11243B;
+}
+
+#sect-about-1 p, 
+#sect-about-3 p{
+    display: flex;
+    padding-right: 16px;
+    padding-left: 128px;
+}
+
+#sect-about-2 p,
+#sect-about-4 p {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 128px;
+}
+
+.sect-experiences-master{
+    padding: 0px 128px;
+}
+
+.sect-experiences-master p, ul, li{
+    color: #f0f0f0;
+}
+
+.exp-list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.exp-left{
+    width: 25%;
+    display: block;
+    padding: 8px 0px;
+}
+
+.exp-history-date {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: end;
+    margin: 0px;
+}
+
+.exp-history-company{
+    font-size: 18px;
+    text-align: end;
+    margin: 0px;
+}
+
+.exp-middle{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.exp-middle img{
+    min-width: none;
+    max-width: 80%;
+}
+
+.exp-right{
+    width: 70%;
+}
+
+
+.exp-right p{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 2px 0px;
+}
+
+.exp-job {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.exp-history-jobtype{
+    color: #447BA5 !important;
+}
+
+.cardview-table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card{
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 360px;
+    flex-grow: 1;
+}
+
+.card-body p{
+    text-align: justify;
+}
+
+.cardview-table{
+    padding: 0rem 8rem;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.card-img-top{
+    object-fit: contain;
+    height: 160px;
+    max-width: auto;
+    float: left;
+    padding: 3px;
+}
+
+.card h5{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.modal-body img{
+    object-fit: contain;
+    width: 720px;
+    max-height: auto;
+    float: left;
+    padding:1rem;
+}
+
+.modal-body p{
+    padding: 1rem;
+    text-align: justify;
+}
+
+
+/* Section Skills */
+#sect-skills {
+    padding: 0px 128px;
+    margin: auto;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillwindow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skillset{
+    padding: 0.75rem 1.25rem;
+    font-size: 16px !important;
+    border-radius: 0.75rem;
+    margin: 0.5rem;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #FFD700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pink{
+    border-color: #F3AFA8 !important;
+}
+
+#right-skill-content{
+    /* display: flex;
+    align-content: center;
+    margin: 0px; */
+    width: 0px;
+    visibility: hidden;
+}
+
+
+#crosswords{
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+
+
+/* Footer */
+footer{
+    padding: 48px;
+    background-color: #0A1626;
+}
+
+.footer-content{
+    padding: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer-content img{
+    width: 3rem;
+    height: 3rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 8px;
+}
+
+#footer-content-id >p{
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0px;
+}
+
+#version-id p{
+    font-size: small;
+    display: flex;
+    justify-content: end;
+    margin: 0px 2rem;
+    color: #4f4f4f;
+}
+
+@media (max-width: 768px) and (min-width: 0px){
+    .sect-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .left-home-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-home-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .right-home-content img{
+        max-width: 300px;
+    }
+
+    .body-context h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 1rem 1rem 1rem;
+        font-size: 48px;
+    }
+
+    .sect-about-container img{
+        visibility: hidden;
+        height: 0;
+    }
+
+    .sect-about-container p {
+        font-size: 16px;
+        color: #f0f0f0;
+    }
+
+    #sect-about-1 p,
+    #sect-about-2 p, 
+    #sect-about-3 p, 
+    #sect-about-4 p{
+        padding: 1rem;
+        font-size: 16px;
+    }
+
+    .exp-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .exp-middle img{
+        width: 0;
+        visibility: hidden;
+    }
+
+    .exp-left{
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        margin: 1rem 0 0 0;
+    }
+    .exp-left p{
+        text-align: center;
+
+    }
+    .exp-middle{
+        height: 0;
+        padding: 0px;
+        margin: 0px;
+    }
+    .exp-right{
+        width: 100%;
+        padding: 0px;
+    }
+    .exp-right p{
+        margin: 0 2px;
+    }
+    .exp-job p{
+        font-size: 24px;
+        text-align: left;
+    }
+    .sect-experiences-master {
+        padding: 0px 1rem;
+        margin: 0px 0px;
+    }
+    .cardview-table{
+        padding: 0rem 1rem;
+        display: flex;
+        column-gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .skillwindow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #left-skill-content {
+        display: grid;
+        grid-template-columns: repeat(2, 0.75fr);
+    }
+
+    #right-skill-content{
+        width: 0px;
+        visibility: hidden;
+    }
+ 
+}
+
+@media (max-width:1200px) and (min-width: 768px) {
+    .sect-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+    .left-home-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-home-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-context h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8rem 1rem 1rem 1rem;
+        font-size: 48px;
+    }
+
+    .sect-about-container img {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .sect-about-container p {
+        font-size: 18px;
+        color: #f0f0f0;
+    }
+
+    #sect-about-1 p,
+    #sect-about-2 p,
+    #sect-about-3 p,
+    #sect-about-4 p {
+        padding: 1rem;
+    }
+
+    .exp-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .exp-middle img {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .exp-left {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        margin: 1rem 0 0 0;
+    }
+
+    .exp-left p {
+        text-align: center;
+
+    }
+
+    .exp-middle {
+        height: 0;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .exp-right {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .exp-right p {
+        margin: 0 2px;
+    }
+
+    .exp-job p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .sect-experiences-master {
+        padding: 0px 1rem;
+    }
+
+    .cardview-table {
+        padding: 0rem 1rem;
+        display: flex;
+        column-gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .skillwindow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #left-skill-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #right-skill-content {
+        width: 0px;
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sect-title {
+        display: flex;
+        height: 2rem;
+        min-height: 100vh;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #00ADB5;
+    }
+    .left-home-content {
+        margin: auto;
+        height: 50%;
+        justify-content: center;
+        padding-left: 15%;  
+    }
+    .right-home-content img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .skillwindow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #left-skill-content {
+        display: grid;
+        padding: 0 8rem;
+        grid-template-columns: repeat(6, 1.5fr);
+    }
+    #left-skill-content p{
+        text-align: center;
+        vertical-align: middle;
+    }
+}
