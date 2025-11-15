@@ -64,10 +64,18 @@ header{
 }
 
 #short-desc{
-    font-size: 24px;
+    font-size: 28px;
+    color: #f0f0f0;
+    font-weight: 500;
+    margin: 2px 0px;
+}
+
+#long-desc{
+    font-size: 18px;
     color: #f0f0f0;
     font-weight: 400;
     margin: 2px 0px;
+    text-align: justify;
 }
 
 #first-name{
@@ -133,6 +141,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-bottom: 3rem;
 }
 
 .exp-left{
@@ -170,7 +179,6 @@ header{
     width: 70%;
 }
 
-
 .exp-right p{
     font-size: 36px;
     font-weight: 600;
@@ -180,11 +188,39 @@ header{
 .exp-job {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.exp-job p {
+    margin: 0px;
+}
+
+.exp-history-jobdesc {
+    font-size: 36px !important;
+    font-weight: 600 !important;
 }
 
 .exp-history-jobtype{
     color: #447BA5 !important;
+    font-size: 36px !important;
+    font-weight: 600 !important;
+}
+
+.exp-history-desc {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    margin-top: 1rem !important;
+}
+
+.exp-history-desc ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.exp-history-desc li {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
 }
 
 .cardview-table{
@@ -230,7 +266,7 @@ header{
     -webkit-box-orient: vertical;
 }
 
-.card h5 {
+.card p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -241,15 +277,57 @@ header{
 
 .modal-body img{
     object-fit: contain;
-    width: 720px;
-    max-height: auto;
-    float: left;
-    padding:1rem;
+    width: 100%;
+    max-height: 500px;
+    padding: 1rem;
 }
 
 .modal-body p{
     padding: 1rem;
     text-align: justify;
+}
+
+.modal-body .row {
+    margin: 0;
+}
+
+/* Carousel styling */
+.carousel-inner {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #00ADB5;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Hide carousel controls if only one image */
+.carousel-single-image .carousel-control-prev,
+.carousel-single-image .carousel-control-next,
+.carousel-single-image .carousel-indicators {
+    display: none;
 }
 
 
@@ -391,7 +469,6 @@ footer{
         padding: 1rem;
         font-size: 16px;
     }
-
     .exp-list{
         display: flex;
         justify-content: center;
@@ -424,9 +501,19 @@ footer{
     .exp-right p{
         margin: 0 2px;
     }
+    .exp-job {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .exp-job p{
         font-size: 24px;
-        text-align: left;
+        text-align: center;
+    }
+    .exp-history-desc {
+        font-size: 16px !important;
+    }
+    .exp-history-desc li {
+        font-size: 16px;
     }
     .sect-experiences-master {
         padding: 0px 1rem;
@@ -494,6 +581,7 @@ footer{
 
     .sect-about-container p {
         font-size: 18px;
+        flex-direction: column;
         color: #f0f0f0;
     }
 
@@ -542,9 +630,17 @@ footer{
         margin: 0 2px;
     }
 
+    .exp-job {
+        justify-content: center;
+    }
+    
     .exp-job p {
-        font-size: 24px;
+        font-size: 28px;
         text-align: center;
+    }
+
+    .exp-history-desc {
+        font-size: 18px !important;
     }
 
     .sect-experiences-master {
